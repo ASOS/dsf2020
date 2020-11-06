@@ -5,6 +5,9 @@ First we will build a recommender model together in Google Colab. Then we will d
 
 Before the workshop you can open the notebook by visiting [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb) and clicking on 'File/Open Notebook'. In the orange window that opens click on "GitHub". Then in the 'Enter a GitHub URL or search by organization or user' line enter 'asos/dsf2020'. Finally click on "DSF-ASOS_Build_and_Deploy_a_Recommender_in_3_Hours.ipynb".
 
+## A note about the data
+This repo contains four data files which will be used for training a recommender model. They contain product ids and fake user ids.
+
 ## Serving a fashion recommender using Tensorflow serving
 
 #### About Tensorflow serving
