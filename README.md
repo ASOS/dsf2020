@@ -22,7 +22,6 @@ A SavedModel contains a complete TensorFlow program, including weights and a gra
 The recommended way of running Tensorflow serving is with Docker image.
 
 ##### Environment setup
-- Access to valid Azure subscription where Azure Kubernetes cluster can be created
 - docker engine installed and running to run a serve
     General installation instructions are on the [Docker site](https://docs.docker.com/get-docker/), but some quick links here:
     [Docker for macOS](https://docs.docker.com/docker-for-mac/install/)
@@ -57,7 +56,7 @@ docker run -d -p 8501:8501 -v "$PWD/:/models/recommender" -e MODEL_NAME=recommen
 
 _**Mac**_
 
-docker run -d -p 8501:8501 --mount type=bind,source='${PWD}/',target='/models/recommender' -e MODEL_NAME=recommender tensorflow/serving
+docker run -d -p 8501:8501 --mount type=bind,source=${PWD}/,target='/models/recommender' -e MODEL_NAME=recommender tensorflow/serving
 
 ````
 
